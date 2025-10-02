@@ -2,6 +2,8 @@
 
 Sistema de gestión de productos desarrollado con JavaFX que permite crear, listar y eliminar productos.
 
+(estos son los obejtivos)
+
 ## 🚀 Características
 
 - **Dashboard principal** con tabla de productos
@@ -57,13 +59,14 @@ fx10/
 
 ### Dashboard Principal
 
-- Visualiza todos los productos en una tabla
-- Haz clic en "Crear Producto" para agregar un nuevo producto
-- Selecciona un producto y haz clic en "Eliminar Producto" para eliminarlo
+- Visualiza las opciones para interactuar y navegar
+- Haz clic en "Formulario Producto" para agregar un nuevo producto
+- Haz clic en "Tabla Productos" para ver todos los prodcutos y sus detalles
+  └── Selecciona un producto y haz clic en "Eliminar Producto" para eliminarlo
 
 ### Crear Producto
 
-1. Haz clic en el botón "Crear Producto"
+1. Haz clic en "Formulario Producto"
 2. Completa todos los campos del formulario:
    - Código (único)
    - Nombre
