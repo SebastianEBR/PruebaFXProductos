@@ -3,16 +3,16 @@
 <?import javafx.geometry.Insets?>
 <?import javafx.scene.control.Button?>
 <?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
 <?import javafx.scene.layout.HBox?>
 <?import javafx.scene.layout.Region?>
 <?import javafx.scene.layout.VBox?>
 <?import javafx.scene.text.Font?>
 
 <VBox fx:id="contenedorPrincipal"
-      prefHeight="420.0"
-      prefWidth="799.0"
       spacing="20"
-      stylesheets="@styles/Dashboard.css"
+      style="-fx-background-color: #f5f5f5;"
       xmlns="http://javafx.com/javafx/25"
       xmlns:fx="http://javafx.com/fxml/1"
       fx:controller="co.edu.uniquindio.fx10.controlador.DashboardController">
@@ -23,21 +23,21 @@
 
     <!-- Encabezado -->
     <HBox alignment="CENTER_LEFT" spacing="20">
-        <Label fx:id="lblTitulo" text="Dashboard de Productos">
+        <Label fx:id="lblTitulo" style="-fx-text-fill: #2c3e50;" text="Dashboard de Productos">
             <font>
                 <Font name="System Bold" size="28" />
             </font>
         </Label>
         <Region HBox.hgrow="ALWAYS" />
+        <Button fx:id="btnListadoProducto" onAction="#onListadoProducto" style="-fx-background-color: #0db; -fx-text-fill: white; -fx-font-size: 14px; -fx-padding: 10 20; -fx-cursor: hand; -fx-background-radius: 5;" text="Listado Productos">
+            <font>
+                <Font name="System Bold" size="14" />
+            </font>
+        </Button>
+        <Button fx:id="btnFormularioProducto" onAction="#onFormularioProducto" style="-fx-background-color: #3498db; -fx-text-fill: white; -fx-font-size: 14px; -fx-padding: 10 20; -fx-cursor: hand; -fx-background-radius: 5;" text="Formulario Producto">
+            <font>
+                <Font name="System Bold" size="14" />
+            </font>
+        </Button>
     </HBox>
-     <Button fx:id="btnListadoProducto" onAction="#onListadoProducto" text="Listado Productos">
-         <font>
-             <Font name="System Bold" size="14" />
-         </font>
-     </Button>
-     <Button fx:id="btnFormularioProducto" onAction="#onFormularioProducto" text="Formulario Producto">
-         <font>
-             <Font name="System Bold" size="14" />
-         </font>
-     </Button>
 </VBox>
