@@ -8,6 +8,7 @@ import javafx.fxml.FXMLLoader;
 import javafx.scene.Parent;
 import javafx.scene.control.Alert;
 import javafx.scene.control.Button;
+import javafx.scene.control.Label;
 import javafx.scene.control.TextField;
 import javafx.scene.layout.VBox;
 
@@ -17,6 +18,30 @@ import java.io.IOException;
  * Controlador para el formulario de creación de productos
  */
 public class FormularioProductoController {
+
+    @FXML
+    private VBox formularioProducto;
+
+    @FXML
+    private Label encabezado;
+
+    @FXML
+    private VBox formulario;
+
+    @FXML
+    private Label code;
+
+    @FXML
+    private Label name;
+
+    @FXML
+    private Label description;
+
+    @FXML
+    private Label price;
+
+    @FXML
+    private Label stock;
 
     @FXML
     private TextField txtCodigo;
