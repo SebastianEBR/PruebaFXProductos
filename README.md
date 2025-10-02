@@ -40,19 +40,21 @@ fx10/
 │       ├── java/
 │       │   ├── module-info.java
 │       │   └── co/edu/uniquindio/fx10/
-│       │       ├── App.java                          # Clase principal
+│       │       ├── App.java                              # Clase principal
 │       │       ├── modelo/
-│       │       │   └── Producto.java                 # Modelo de datos
+│       │       │   └── Producto.java                     # Modelo de datos
 │       │       ├── repositorio/
-│       │       │   └── ProductoRepository.java       # Gestión del ArrayList
+│       │       │   └── ProductoRepository.java           # Gestión del ArrayList
 │       │       └── controlador/
-│       │           ├── DashboardController.java      # Controlador del dashboard
+│       │           ├── DashboardController.java          # Controlador del dashboard
 │       │           └── FormularioProductoController.java # Controlador del formulario
+|       |           └── TablaProdcutosController.java     # Controladr de la tabla
 │       └── resources/
 │           └── co/edu/uniquindio/fx10/vista/
-│               ├── Dashboard.fxml                    # Vista del dashboard
-│               └── FormularioProducto.fxml           # Vista del formulario
-└── pom.xml                                           # Configuración Maven
+│               ├── Dashboard.fxml                        # Vista del dashboard
+│               └── FormularioProducto.fxml               # Vista del formulario
+|               └── TablaProdcutos.fxml                   # vista de la tabla de productos
+└── pom.xml                                               # Configuración Maven
 ```
 
 ## 💡 Uso
