@@ -1,0 +1,26 @@
+
+#contenedorPrincipal {
+    -fx-background-color: #f5f5f5;
+}
+
+#lbTitulo {
+    -fx-text-fill: #2c3e50
+}
+
+#btnListadoProducto {
+    -fx-background-color: #0db;
+    -fx-text-fill: white;
+    -fx-font-size: 14px;
+    -fx-padding: 10 20;
+    -fx-cursor: hand;
+    -fx-background-radius: 5;
+}
+
+#btnFormularioProducto {
+    -fx-background-color: #3498db;
+    -fx-text-fill: white;
+    -fx-font-size: 14px;
+    -fx-padding: 10 20;
+    -fx-cursor: hand;
+    -fx-background-radius: 5;
+}
