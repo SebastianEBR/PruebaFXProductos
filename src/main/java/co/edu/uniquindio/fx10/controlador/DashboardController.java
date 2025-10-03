@@ -3,16 +3,20 @@ package co.edu.uniquindio.fx10.controlador;
 import co.edu.uniquindio.fx10.App;
 import co.edu.uniquindio.fx10.modelo.Producto;
 import co.edu.uniquindio.fx10.repositorio.ProductoRepository;
+import javafx.beans.Observable;
 import javafx.collections.FXCollections;
 import javafx.collections.ObservableList;
 import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
+import javafx.scene.Node;
 import javafx.scene.Parent;
 import javafx.scene.control.*;
 import javafx.scene.control.cell.PropertyValueFactory;
 import javafx.scene.layout.VBox;
 
 import java.io.IOException;
+import java.util.ArrayList;
+import java.util.List;
 
 /**
  * Controlador para el Dashboard principal
@@ -58,6 +62,14 @@ public class DashboardController {
 
     private ProductoRepository productoRepository;
     private ObservableList<Producto> listaProductos;
+    private List<Node> vistaInicial;
+
+
+    @FXML
+    public void initialize() {
+        // Guardamos una copia de los nodos iniciales (los botones del dashboard)
+        vistaInicial = new ArrayList<>(contenedorPrincipal.getChildren());
+    }
 
     /**
      * Carga los productos en la tabla
@@ -143,16 +155,7 @@ public class DashboardController {
      * Restaura la vista del dashboard
      */
     public void restaurarVista() {
-        try {
-            FXMLLoader loader = new FXMLLoader(App.class.getResource("/co/edu/uniquindio/fx10/vista/Dashboard.fxml"));
-            Parent dashboard = loader.load();
-            
-            contenedorPrincipal.getChildren().clear();
-            contenedorPrincipal.getChildren().add(dashboard);
-            
-        } catch (IOException e) {
-            e.printStackTrace();
-        }
+        contenedorPrincipal.getChildren().setAll(vistaInicial);
     }
 
     /**

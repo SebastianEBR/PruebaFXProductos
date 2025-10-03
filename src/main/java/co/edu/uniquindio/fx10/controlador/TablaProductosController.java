@@ -110,13 +110,8 @@ public class TablaProductosController {
      * Maneja el evento de click en el botón "Volver"
      */
     @FXML
-    private void onBack() throws IOException {
-        FXMLLoader loader = new FXMLLoader(App.class.getResource("/co/edu/uniquindio/fx10/vista/Dashboard.fxml"));
-        Parent dashboard = loader.load();
-        DashboardController ctr = loader.getController();
-
-        contenedorPrincipal.getChildren().clear(); // 👈 Limpia antes
-        contenedorPrincipal.getChildren().add(dashboard);
+    private void onBack() {
+        dashboardController.restaurarVista();
     }
 
     /**
