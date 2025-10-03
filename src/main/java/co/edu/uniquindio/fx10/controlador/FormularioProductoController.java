@@ -20,30 +20,6 @@ import java.io.IOException;
 public class FormularioProductoController {
 
     @FXML
-    private VBox formularioProducto;
-
-    @FXML
-    private Label encabezado;
-
-    @FXML
-    private VBox formulario;
-
-    @FXML
-    private Label code;
-
-    @FXML
-    private Label name;
-
-    @FXML
-    private Label description;
-
-    @FXML
-    private Label price;
-
-    @FXML
-    private Label stock;
-
-    @FXML
     private TextField txtCodigo;
 
     @FXML

@@ -5,7 +5,7 @@
 <?import javafx.scene.layout.*?>
 <?import javafx.scene.text.Font?>
 
-<VBox fx:id="formularioProducto"
+<VBox id="formularioProducto"
       xmlns="http://javafx.com/javafx"
       xmlns:fx="http://javafx.com/fxml"
       fx:controller="co.edu.uniquindio.fx10.controlador.FormularioProductoController"
@@ -17,41 +17,41 @@
     </padding>
 
     <!-- Encabezado -->
-    <Label fx:id="encabezado" text="Crear Nuevo Producto">
+    <Label id="encabezado" text="Crear Nuevo Producto">
         <font>
             <Font name="System Bold" size="28"/>
         </font>
     </Label>
 
     <!-- Formulario -->
-    <VBox fx:id="formulario" spacing="15">
+    <VBox id="formulario" spacing="15">
         <padding>
             <Insets top="30" right="30" bottom="30" left="30"/>
         </padding>
 
         <GridPane hgap="15" vgap="20">
             <!-- Código -->
-            <Label fx:id="code" text="Código:" GridPane.columnIndex="0" GridPane.rowIndex="0"/>
+            <Label id="code" text="Código:" GridPane.columnIndex="0" GridPane.rowIndex="0"/>
             <TextField fx:id="txtCodigo" promptText="Ingrese el código del producto" 
                        GridPane.columnIndex="1" GridPane.rowIndex="0"/>
 
             <!-- Nombre -->
-            <Label fx:id="name" text="Nombre:" GridPane.columnIndex="0" GridPane.rowIndex="1"/>
+            <Label id="name" text="Nombre:" GridPane.columnIndex="0" GridPane.rowIndex="1"/>
             <TextField fx:id="txtNombre" promptText="Ingrese el nombre del producto" 
                        GridPane.columnIndex="1" GridPane.rowIndex="1"/>
 
             <!-- Descripción -->
-            <Label fx:id="description" text="Descripción:" GridPane.columnIndex="0" GridPane.rowIndex="2"/>
+            <Label id="description" text="Descripción:" GridPane.columnIndex="0" GridPane.rowIndex="2"/>
             <TextField fx:id="txtDescripcion" promptText="Ingrese la descripción del producto" 
                        GridPane.columnIndex="1" GridPane.rowIndex="2"/>
 
             <!-- Precio -->
-            <Label fx:id="price" text="Precio:" GridPane.columnIndex="0" GridPane.rowIndex="3"/>
+            <Label id="price" text="Precio:" GridPane.columnIndex="0" GridPane.rowIndex="3"/>
             <TextField fx:id="txtPrecio" promptText="Ingrese el precio" 
                        GridPane.columnIndex="1" GridPane.rowIndex="3"/>
 
             <!-- Stock -->
-            <Label fx:id="stock" text="Stock:" GridPane.columnIndex="0" GridPane.rowIndex="4"/>
+            <Label id="stock" text="Stock:" GridPane.columnIndex="0" GridPane.rowIndex="4"/>
             <TextField fx:id="txtStock" promptText="Ingrese la cantidad en stock" 
                        GridPane.columnIndex="1" GridPane.rowIndex="4"/>
 
