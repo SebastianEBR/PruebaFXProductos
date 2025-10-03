@@ -108,10 +108,10 @@ public class FormularioProductoController {
         try {
             FXMLLoader loader = new FXMLLoader(App.class.getResource("/co/edu/uniquindio/fx10/vista/Dashboard.fxml"));
             Parent dashboard = loader.load();
-            
+
             contenedorPrincipal.getChildren().clear();
-            contenedorPrincipal.getChildren().add(dashboard);
-            
+            contenedorPrincipal.getChildren().add(dashboardController.getContenedorPrincipal());
+
         } catch (IOException e) {
             mostrarAlerta("Error", "No se pudo volver al dashboard", Alert.AlertType.ERROR);
             e.printStackTrace();

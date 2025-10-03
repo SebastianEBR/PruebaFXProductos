@@ -110,8 +110,13 @@ public class TablaProductosController {
      * Maneja el evento de click en el botón "Volver"
      */
     @FXML
-    private void onBack() {
-        restaurarVista();
+    private void onBack() throws IOException {
+        FXMLLoader loader = new FXMLLoader(App.class.getResource("/co/edu/uniquindio/fx10/vista/Dashboard.fxml"));
+        Parent dashboard = loader.load();
+        DashboardController ctr = loader.getController();
+
+        contenedorPrincipal.getChildren().clear(); // 👈 Limpia antes
+        contenedorPrincipal.getChildren().add(dashboard);
     }
 
     /**
@@ -149,7 +154,8 @@ public class TablaProductosController {
             Parent dashboard = loader.load();
 
             contenedorPrincipal.getChildren().clear();
-            contenedorPrincipal.getChildren().add(dashboard);
+            contenedorPrincipal.getChildren().add(dashboardController.getContenedorPrincipal());
+
 
         } catch (IOException e) {
             e.printStackTrace();
